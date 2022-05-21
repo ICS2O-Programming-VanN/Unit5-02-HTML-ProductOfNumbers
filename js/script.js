@@ -12,11 +12,21 @@ function displayNumbers() {
 
   // Initializes Variables
   let product = 0;
+  let outputMessage = "";
 
-  for (let counter = 0; counter < secondNumber; counter++) {
-    product += firstNumber;
+  // Ensures that the numbers user inputs is positive
+  if (firstNumber > 0 && secondNumber > 0) {
+    // Calculates product of two classes
+    for (let counter = 0; counter < secondNumber; counter++) {
+      product += firstNumber;
+    }
+    outputMessage = "The product of these two numbers: " + product;
+    // IF the user did not fill both boxes with positive integers (Zero is not negative nor positive)
+  } else {
+    outputMessage = "Please enter a positive integer in BOTH boxes!";
   }
     
+    
   // Displays numbers from minimum to maximum (Or possible an error message)
-  document.getElementById("output").innerHTML = "The product of these two numbers: " + product;
+  document.getElementById("output").innerHTML = outputMessage;
 }
