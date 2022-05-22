@@ -2,11 +2,11 @@
 
 'use strict';
 /**
- * This function displays all the numbers from the user's inputted min and max
+ * This function displays the product of two numbers inputted by the user
  */
 function displayNumbers() {
 
-  // Variables (Gets Max and Min)
+  // Variables (Gets First and Second Integer)
   let firstNumber = parseInt(document.getElementById("first-num").value);
   let secondNumber = parseInt(document.getElementById("second-num").value);
 
@@ -14,9 +14,9 @@ function displayNumbers() {
   let product = 0;
   let outputMessage = "";
 
-  // Ensures that the numbers user inputs is positive
+  // Ensures that the numbers from user input is positive
   if (firstNumber > 0 && secondNumber > 0) {
-    // Calculates product of two classes
+    // Calculates product of two numbers
     for (let counter = 0; counter < secondNumber; counter++) {
       product += firstNumber;
     }
@@ -27,6 +27,6 @@ function displayNumbers() {
   }
     
     
-  // Displays numbers from minimum to maximum (Or possible an error message)
+  // Displays Product of the two numbers (Or possible an error message)
   document.getElementById("output").innerHTML = outputMessage;
 }

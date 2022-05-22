@@ -15,21 +15,6 @@ p {
   background-color: #fbf8ac;
 }
 
-main {
-	text-align: center;
-}
-
-/* Centered Div using flexbox */
-
-.mdl-layout-title {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #ffbea8;
-	font-weight: bold;
-  height: 50px;
-}
-
 h2 {
   background-color: #ff9494;
   padding: 20px;
